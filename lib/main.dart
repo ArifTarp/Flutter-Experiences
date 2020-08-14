@@ -4,6 +4,7 @@ import 'package:flutter_tutorial/views/expansion_tile_and_list_view_view.dart';
 import 'package:flutter_tutorial/views/file_management_view.dart';
 import 'package:flutter_tutorial/views/form_view.dart';
 import 'package:flutter_tutorial/views/home_view.dart';
+import 'package:flutter_tutorial/views/sliver_view.dart';
 import 'package:flutter_tutorial/views/ui_base_view.dart';
 import 'package:flutter_tutorial/views/html_parse_view.dart';
 import 'package:flutter_tutorial/views/http_post_and_show_dialog_view.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Material App',
-        initialRoute: "/fileManagementView",
+        initialRoute: "/sliverView",
         routes: {
           "/": (context) => FormView(),
           "/home": (context) => AdvancedHttpView(),
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
               ExpansionTileAndListViewView(),
           "/htmlParseView": (context) => HtmlParseView(),
           "/fileManagementView": (context) => FileManagementView(),
+          "/sliverView": (context) => SliverView(),
         });
   }
 }
