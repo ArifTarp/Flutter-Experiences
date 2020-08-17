@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/views/advanced_color_card_widget.dart';
+import 'package:flutter_tutorial/views/advanced_stateful_color_card_widget.dart';
 import 'package:http/http.dart' as http;
 
 class AdvancedStatefulView extends StatefulWidget {
