@@ -10,7 +10,7 @@ import 'package:flutter_tutorial/views/hero_view.dart';
 import 'package:flutter_tutorial/views/home_view.dart';
 import 'package:flutter_tutorial/views/routing/card_informations_view.dart';
 import 'package:flutter_tutorial/views/routing/detail_view.dart';
-import 'package:flutter_tutorial/views/shared_pereferences.dart';
+import 'package:flutter_tutorial/views/shared_preferences.dart';
 import 'package:flutter_tutorial/views/sliver_view.dart';
 import 'package:flutter_tutorial/views/ui_base_view.dart';
 import 'package:flutter_tutorial/views/html_parse_view.dart';
