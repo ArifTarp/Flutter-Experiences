@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/views/advanced_http_view.dart';
+import 'package:flutter_tutorial/views/advanced_stateful_view.dart';
 import 'package:flutter_tutorial/views/color_filtered_and_selectable_text_view.dart';
 import 'package:flutter_tutorial/views/cupertino_picker_view.dart';
 import 'package:flutter_tutorial/views/dropdown_view.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Material App',
-        initialRoute: "/colorFilteredAndSelectableTextView",
+        initialRoute: "/advancedStatefulView",
         routes: {
           "/": (context) => FormView(),
           "/home": (context) => AdvancedHttpView(),
@@ -47,9 +48,7 @@ class MyApp extends StatelessWidget {
           "/cupertinoPickerView": (context) => CupertinoPickerView(),
           "/sharedPereferencesView": (context) => SharedPreferencesView(),
           "/colorFilteredAndSelectableTextView": (context) => ColorFilteredAndSelectableTextView(),
+          "/advancedStatefulView": (context) => AdvancedStatefulView(),
         });
   }
-}
-
-class SharedPereferencesView {
 }
