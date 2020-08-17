@@ -45,8 +45,11 @@ class MyApp extends StatelessWidget {
           "/heroView": (context) => HeroView(),
           "/dropdownView": (context) => DropDownView(),
           "/cupertinoPickerView": (context) => CupertinoPickerView(),
-          "/sharedPereferencesView": (context) => SharedPereferencesView(),
+          "/sharedPereferencesView": (context) => SharedPreferencesView(),
           "/colorFilteredAndSelectableTextView": (context) => ColorFilteredAndSelectableTextView(),
         });
   }
+}
+
+class SharedPereferencesView {
 }
