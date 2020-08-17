@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/views/advanced_http_view.dart';
+import 'package:flutter_tutorial/views/color_filtered_and_selectable_text_view.dart';
 import 'package:flutter_tutorial/views/cupertino_picker_view.dart';
 import 'package:flutter_tutorial/views/dropdown_view.dart';
 import 'package:flutter_tutorial/views/expansion_tile_and_list_view_view.dart';
@@ -9,6 +10,7 @@ import 'package:flutter_tutorial/views/hero_view.dart';
 import 'package:flutter_tutorial/views/home_view.dart';
 import 'package:flutter_tutorial/views/routing/card_informations_view.dart';
 import 'package:flutter_tutorial/views/routing/detail_view.dart';
+import 'package:flutter_tutorial/views/shared_pereferences.dart';
 import 'package:flutter_tutorial/views/sliver_view.dart';
 import 'package:flutter_tutorial/views/ui_base_view.dart';
 import 'package:flutter_tutorial/views/html_parse_view.dart';
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Material App',
-        initialRoute: "/cupertinoPickerView",
+        initialRoute: "/colorFilteredAndSelectableTextView",
         routes: {
           "/": (context) => FormView(),
           "/home": (context) => AdvancedHttpView(),
@@ -43,6 +45,8 @@ class MyApp extends StatelessWidget {
           "/heroView": (context) => HeroView(),
           "/dropdownView": (context) => DropDownView(),
           "/cupertinoPickerView": (context) => CupertinoPickerView(),
+          "/sharedPereferencesView": (context) => SharedPereferencesView(),
+          "/colorFilteredAndSelectableTextView": (context) => ColorFilteredAndSelectableTextView(),
         });
   }
 }
