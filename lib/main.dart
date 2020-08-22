@@ -9,6 +9,7 @@ import 'package:flutter_tutorial/views/file_management_view.dart';
 import 'package:flutter_tutorial/views/form_view.dart';
 import 'package:flutter_tutorial/views/hero_view.dart';
 import 'package:flutter_tutorial/views/home_view.dart';
+import 'package:flutter_tutorial/views/popup_and_wrap_and_chip_view.dart';
 import 'package:flutter_tutorial/views/routing/card_informations_view.dart';
 import 'package:flutter_tutorial/views/routing/detail_view.dart';
 import 'package:flutter_tutorial/views/shared_preferences.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Material App',
-        initialRoute: "/advancedStatefulView",
+        initialRoute: "/popupAndChipView",
         routes: {
           "/": (context) => FormView(),
           "/home": (context) => AdvancedHttpView(),
@@ -49,6 +50,7 @@ class MyApp extends StatelessWidget {
           "/sharedPereferencesView": (context) => SharedPreferencesView(),
           "/colorFilteredAndSelectableTextView": (context) => ColorFilteredAndSelectableTextView(),
           "/advancedStatefulView": (context) => AdvancedStatefulView(),
+          "/popupAndChipView": (context) => PopupAndWrapAndChipView(),
         });
   }
 }
