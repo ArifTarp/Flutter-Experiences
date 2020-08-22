@@ -9,6 +9,7 @@ import 'package:flutter_tutorial/views/file_management_view.dart';
 import 'package:flutter_tutorial/views/form_view.dart';
 import 'package:flutter_tutorial/views/hero_view.dart';
 import 'package:flutter_tutorial/views/home_view.dart';
+import 'package:flutter_tutorial/views/material_banner_and_data_table_view.dart';
 import 'package:flutter_tutorial/views/popup_and_wrap_and_chip_view.dart';
 import 'package:flutter_tutorial/views/routing/card_informations_view.dart';
 import 'package:flutter_tutorial/views/routing/detail_view.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Material App',
-        initialRoute: "/popupAndChipView",
+        initialRoute: "/materialBannerAndDataTableView",
         routes: {
           "/": (context) => FormView(),
           "/home": (context) => AdvancedHttpView(),
@@ -48,9 +49,12 @@ class MyApp extends StatelessWidget {
           "/dropdownView": (context) => DropDownView(),
           "/cupertinoPickerView": (context) => CupertinoPickerView(),
           "/sharedPereferencesView": (context) => SharedPreferencesView(),
-          "/colorFilteredAndSelectableTextView": (context) => ColorFilteredAndSelectableTextView(),
+          "/colorFilteredAndSelectableTextView": (context) =>
+              ColorFilteredAndSelectableTextView(),
           "/advancedStatefulView": (context) => AdvancedStatefulView(),
           "/popupAndChipView": (context) => PopupAndWrapAndChipView(),
+          "/materialBannerAndDataTableView": (context) =>
+              MaterialBannerAndDataTableView(),
         });
   }
 }
